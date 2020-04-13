@@ -1,0 +1,447 @@
+$fontP : 'Bebas Neue';
+$color1:#f7f7f7;
+@mixin EmplacP() {
+    width:94%;
+    margin-left: 3%; 
+} 
+@mixin FlexR() {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+@mixin FlexC() {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+@mixin fontPar {
+    p{
+        color: $color1;
+        font-family: $fontP;
+        margin-left: 10%;
+    }  
+}
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color:white;
+}
+.d1{
+    width: 100%;
+    height: 90px;
+    background-color: black;
+    z-index: 2;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    #image{
+        width: 90%;
+        z-index: 3;
+        margin-left: 3%;
+        margin-top: 1%;
+    }
+    #MenuB{
+        width: auto;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: flex-end;
+        align-items: flex-end;
+
+        .d2{
+            width: auto;
+            height: 50px;
+        }
+    }
+    @media screen and (max-width:850px) {
+        display: none;
+    }
+}
+a{
+    list-style-type: none;
+    text-decoration: none;
+    color:$color1;
+    font-size: 30px;
+    margin-left: 40px;
+    font-family: $fontP;
+}
+a:hover{
+    border-bottom: solid 2px white;
+}
+.blank{
+    width: auto;
+    height: 20px;
+}
+.C1{
+    //margin-top: 90px;
+    width: 100%;
+    @include FlexR();
+    #PartieCompte{
+        width: 30%;
+        height: auto;
+        background-color: black;
+        #ZoneFlot{
+            position: sticky;
+            height: auto;
+            width: 100%;
+            img{
+                margin-top: 150px;
+                margin-left: 37.5%;
+                width: 90px;
+                height: 90px;
+
+            }
+            p{
+                // margin-left: 25%;
+                text-align: center;
+                font-size: 18px;
+                color: white;
+                font-family:$fontP;
+            }
+
+        }
+        
+    }
+    #tableauReser{
+        width: 70%;
+        height:auto;
+        background-color: white;
+        #parP{
+            text-align: center;
+            margin-top: 50px;
+            font-size: 32px;
+            color: black;
+            font-family:$fontP;
+            text-decoration: underline ;
+        }
+        .Flex{
+            width: 90%;
+            height: auto;
+            @include FlexR();
+            border-collapse: collapse;
+            border: 2px solid black;
+            margin-left: 5%;
+            #typeCar{
+                text-align: center;
+            }
+            .Reserv{
+                width: 85%;
+                height: auto;
+                margin: 0%;
+                .parag{
+                    color: black;
+                    font-family:$fontP;
+                    font-size: 18px; 
+                }
+                .partieModif{
+                    p{
+                        color: black;
+                        font-family:$fontP;
+                        font-size: 18px;
+                    }
+                    .select{
+                        @include FlexR();
+                        width: 90%;
+                        margin-left: 5%;
+                        .S1 , .S2{
+                            width: 50%;
+                            height: 30px;
+                        }
+                    }
+                    .date{
+                        @include FlexR();
+                        width: 90%;
+                        margin-left: 5%;
+                        margin-top: 30px;
+                        .dateDR{
+                            width: 50%;
+                            height: 30px;
+                        }
+                    }
+                }
+            }
+            .CRUD{
+                width: 15%;
+                img{
+                    width: 20px;
+                    height: 20px;
+                    display: block;
+                    margin-left: 70%;
+                    margin-top: 10px;
+                }
+            }
+        }
+    }
+}
+
+
+    #Btn{
+        color: black;
+        width: 150px;
+        height: 40px;
+        border-radius:5px;
+        background-color: white;
+        font-family: $fontP;
+        font-size: 15px;
+        border-style: none;
+        margin-left: 30%;
+        cursor: pointer;
+        
+        //margin-top: 50px;
+    }
+    .Btn1{
+        color: $color1;
+        width: 150px;
+        height: 40px;
+        border-radius:5px;
+        background-color: black;
+        font-family: $fontP;
+        font-size: 15px;
+        border-style: none;
+        margin-left: 0%;
+        cursor: pointer;
+        text-align: center;
+        margin-top: 30px;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#Footer{
+    width: 100%;
+    height: 300px;
+    #parts4{
+        @include FlexR();
+        width: 100%;
+        height: 280px;
+        background-color: black;
+        font-size: 16px;
+        @include fontPar();
+        justify-content: space-around;
+        #Aide , #Societe , #Liens ,#Reseaux{
+            width: 20%;
+            height:300px;
+            cursor: pointer;
+            #Newsl{
+                @include FlexR();
+                height: 50px;
+                #New{
+                    width: 70%;
+                    margin-left: 10%;
+                    height: 30px;
+                    border-radius: 10px;
+                    -webkit-border-radius: 10px;
+                    -moz-border-radius: 10px;
+                    -ms-border-radius: 10px;
+                    -o-border-radius: 10px;
+                }
+                #Ok{
+                    width: 20%;
+                    height: 30px;
+                    font-family: $fontP;
+                    background-color: black;
+                    color:$color1;
+                    font-size: 12px;
+                    border-radius: 10px;
+                    -webkit-border-radius: 10px;
+                    -moz-border-radius: 10px;
+                    -ms-border-radius: 10px;
+                    -o-border-radius: 10px;
+                }
+            }
+            #pay{
+                @include FlexR();
+                width: 100%;
+                height: 30px;
+                div{
+                    width:20%;
+                    margin-left: 10%;
+                    img{
+                        width: 30px;
+                        height: 30px;
+                    }
+                }
+               
+            }
+        }
+    }
+}
+
+.SousT{
+    text-decoration: underline;
+    font-size: 24px;
+}
+#Coorp{
+    height:20px;
+    width: 100%;
+    background-color: $color1;
+    @include FlexR();
+    @media screen and (max-width: 900px){
+        display: block;
+    }
+    #NomSoc ,#Droits , #Cor{
+        width: 30%;
+        margin-left: 2%;
+        justify-content: space-between;
+        p{
+            text-align: center;
+            font-family: $fontP;
+            font-size: 15px;
+            color: Black;
+        }
+    }
+}
+
+
+    
+
+
+#NavBar-Mobile {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    position: absolute;
+    #nav-header {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        box-sizing: border-box;
+        padding-left: 10px;
+        padding-top: 5px;
+        #nav-menu-icon {
+            position: absolute;
+            left: 91%;
+            top:41%;
+            cursor: pointer;
+            #menu{
+                width: 35px;
+                height: 35px;
+        
+            }
+            #nav-menu-logo img {
+                width: 180px;
+            }
+        }
+        #nav-menu-logo img {
+            width: 180px;
+        }
+    }
+    #nav-menu{
+        left: 85%;
+        margin-top: 5%;
+        position: absolute;
+        @include FlexC();
+        background-color: rgba(255, 255, 255, 0.788);
+        width: 15%;
+        border-top-left-radius: 30%;
+        border-bottom-left-radius: 30%;
+        #nav-close{
+            cursor: pointer;
+            width: 35px;
+            height: 35px;
+            margin-left: 53px;
+            position: absolute;
+            left: 86px;
+            top: -18px;
+        }
+        a{
+            height : 90px;
+            color: black;
+        }
+    }    
+}
+
+@media screen and (max-width:1175px) {
+    #d5 {
+        width: 100%;
+        margin-left: 0;
+    }
+    #d7{
+        display: none;
+    }
+    
+    #NavBar-Mobile{
+        display: none;
+    }
+    .d1{
+        display: flex;
+    }
+    #Footer{
+        display: none;
+        height: 0px;
+ 
+    }
+}
+@media screen and (max-width:850px) {
+    #NavBar-Mobile #nav-menu {
+        left: 73%;
+        margin-top: 10%;
+        width: 27%;
+    }
+    #NavBar-Mobile{
+        display: flex;
+    }
+    .d1{
+        display: none;
+    }
+    #Propos #Part2 .Padr {
+        font-size: 10px;
+    }
+    #parts4{
+        display: none;
+        height: 0px;
+    }
+}
+
+
+
+
+@media screen and (max-width:670px) {
+    #NavBar-Mobile #nav-menu {
+        left: 67%;
+        margin-top: 10%;
+        width: 32%;
+    }
+    #NavBar-Mobile{
+        display: flex;
+    }
+    .d1{
+        display: none;
+    }
+    #Propos #Part2 .Padr {
+        font-size: 10px;
+    
+    }
+    #parts4{
+        display: none;
+        height: 0;
+    }
+    
+}
+

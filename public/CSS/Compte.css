@@ -1,0 +1,552 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: white;
+}
+
+.d1 {
+  width: 100%;
+  height: 90px;
+  background-color: black;
+  z-index: 2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+}
+
+.d1 #image {
+  width: 90%;
+  z-index: 3;
+  margin-left: 3%;
+  margin-top: 1%;
+}
+
+.d1 #MenuB {
+  width: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.d1 #MenuB .d2 {
+  width: auto;
+  height: 50px;
+}
+
+@media screen and (max-width: 850px) {
+  .d1 {
+    display: none;
+  }
+}
+
+a {
+  list-style-type: none;
+  text-decoration: none;
+  color: #f7f7f7;
+  font-size: 30px;
+  margin-left: 40px;
+  font-family: "Bebas Neue";
+}
+
+a:hover {
+  border-bottom: solid 2px white;
+}
+
+.blank {
+  width: auto;
+  height: 20px;
+}
+
+.C1 {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+}
+
+.C1 #PartieCompte {
+  width: 30%;
+  height: auto;
+  background-color: black;
+}
+
+.C1 #PartieCompte #ZoneFlot {
+  position: -webkit-sticky;
+  position: sticky;
+  height: auto;
+  width: 100%;
+}
+
+.C1 #PartieCompte #ZoneFlot img {
+  margin-top: 150px;
+  margin-left: 37.5%;
+  width: 90px;
+  height: 90px;
+}
+
+.C1 #PartieCompte #ZoneFlot p {
+  text-align: center;
+  font-size: 18px;
+  color: white;
+  font-family: "Bebas Neue";
+}
+
+.C1 #tableauReser {
+  width: 70%;
+  height: auto;
+  background-color: white;
+}
+
+.C1 #tableauReser #parP {
+  text-align: center;
+  margin-top: 50px;
+  font-size: 32px;
+  color: black;
+  font-family: "Bebas Neue";
+  text-decoration: underline;
+}
+
+.C1 #tableauReser .Flex {
+  width: 90%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  border-collapse: collapse;
+  border: 2px solid black;
+  margin-left: 5%;
+}
+
+.C1 #tableauReser .Flex #typeCar {
+  text-align: center;
+}
+
+.C1 #tableauReser .Flex .Reserv {
+  width: 85%;
+  height: auto;
+  margin: 0%;
+}
+
+.C1 #tableauReser .Flex .Reserv .parag {
+  color: black;
+  font-family: "Bebas Neue";
+  font-size: 18px;
+}
+
+.C1 #tableauReser .Flex .Reserv .partieModif p {
+  color: black;
+  font-family: "Bebas Neue";
+  font-size: 18px;
+}
+
+.C1 #tableauReser .Flex .Reserv .partieModif .select {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  width: 90%;
+  margin-left: 5%;
+}
+
+.C1 #tableauReser .Flex .Reserv .partieModif .select .S1, .C1 #tableauReser .Flex .Reserv .partieModif .select .S2 {
+  width: 50%;
+  height: 30px;
+}
+
+.C1 #tableauReser .Flex .Reserv .partieModif .date {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  width: 90%;
+  margin-left: 5%;
+  margin-top: 30px;
+}
+
+.C1 #tableauReser .Flex .Reserv .partieModif .date .dateDR {
+  width: 50%;
+  height: 30px;
+}
+
+.C1 #tableauReser .Flex .CRUD {
+  width: 15%;
+}
+
+.C1 #tableauReser .Flex .CRUD img {
+  width: 20px;
+  height: 20px;
+  display: block;
+  margin-left: 70%;
+  margin-top: 10px;
+}
+
+#Btn {
+  color: black;
+  width: 150px;
+  height: 40px;
+  border-radius: 5px;
+  background-color: white;
+  font-family: "Bebas Neue";
+  font-size: 15px;
+  border-style: none;
+  margin-left: 30%;
+  cursor: pointer;
+}
+
+.Btn1 {
+  color: #f7f7f7;
+  width: 150px;
+  height: 40px;
+  border-radius: 5px;
+  background-color: black;
+  font-family: "Bebas Neue";
+  font-size: 15px;
+  border-style: none;
+  margin-left: 0%;
+  cursor: pointer;
+  text-align: center;
+  margin-top: 30px;
+}
+
+#Footer {
+  width: 100%;
+  height: 300px;
+}
+
+#Footer #parts4 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  width: 100%;
+  height: 280px;
+  background-color: black;
+  font-size: 16px;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+#Footer #parts4 p {
+  color: #f7f7f7;
+  font-family: "Bebas Neue";
+  margin-left: 10%;
+}
+
+#Footer #parts4 #Aide, #Footer #parts4 #Societe, #Footer #parts4 #Liens, #Footer #parts4 #Reseaux {
+  width: 20%;
+  height: 300px;
+  cursor: pointer;
+}
+
+#Footer #parts4 #Aide #Newsl, #Footer #parts4 #Societe #Newsl, #Footer #parts4 #Liens #Newsl, #Footer #parts4 #Reseaux #Newsl {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  height: 50px;
+}
+
+#Footer #parts4 #Aide #Newsl #New, #Footer #parts4 #Societe #Newsl #New, #Footer #parts4 #Liens #Newsl #New, #Footer #parts4 #Reseaux #Newsl #New {
+  width: 70%;
+  margin-left: 10%;
+  height: 30px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+#Footer #parts4 #Aide #Newsl #Ok, #Footer #parts4 #Societe #Newsl #Ok, #Footer #parts4 #Liens #Newsl #Ok, #Footer #parts4 #Reseaux #Newsl #Ok {
+  width: 20%;
+  height: 30px;
+  font-family: "Bebas Neue";
+  background-color: black;
+  color: #f7f7f7;
+  font-size: 12px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+#Footer #parts4 #Aide #pay, #Footer #parts4 #Societe #pay, #Footer #parts4 #Liens #pay, #Footer #parts4 #Reseaux #pay {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  width: 100%;
+  height: 30px;
+}
+
+#Footer #parts4 #Aide #pay div, #Footer #parts4 #Societe #pay div, #Footer #parts4 #Liens #pay div, #Footer #parts4 #Reseaux #pay div {
+  width: 20%;
+  margin-left: 10%;
+}
+
+#Footer #parts4 #Aide #pay div img, #Footer #parts4 #Societe #pay div img, #Footer #parts4 #Liens #pay div img, #Footer #parts4 #Reseaux #pay div img {
+  width: 30px;
+  height: 30px;
+}
+
+.SousT {
+  text-decoration: underline;
+  font-size: 24px;
+}
+
+#Coorp {
+  height: 20px;
+  width: 100%;
+  background-color: #f7f7f7;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+}
+
+@media screen and (max-width: 900px) {
+  #Coorp {
+    display: block;
+  }
+}
+
+#Coorp #NomSoc, #Coorp #Droits, #Coorp #Cor {
+  width: 30%;
+  margin-left: 2%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#Coorp #NomSoc p, #Coorp #Droits p, #Coorp #Cor p {
+  text-align: center;
+  font-family: "Bebas Neue";
+  font-size: 15px;
+  color: Black;
+}
+
+#NavBar-Mobile {
+  display: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  position: absolute;
+}
+
+#NavBar-Mobile #nav-header {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding-left: 10px;
+  padding-top: 5px;
+}
+
+#NavBar-Mobile #nav-header #nav-menu-icon {
+  position: absolute;
+  left: 91%;
+  top: 41%;
+  cursor: pointer;
+}
+
+#NavBar-Mobile #nav-header #nav-menu-icon #menu {
+  width: 35px;
+  height: 35px;
+}
+
+#NavBar-Mobile #nav-header #nav-menu-icon #nav-menu-logo img {
+  width: 180px;
+}
+
+#NavBar-Mobile #nav-header #nav-menu-logo img {
+  width: 180px;
+}
+
+#NavBar-Mobile #nav-menu {
+  left: 85%;
+  margin-top: 5%;
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: rgba(255, 255, 255, 0.788);
+  width: 15%;
+  border-top-left-radius: 30%;
+  border-bottom-left-radius: 30%;
+}
+
+#NavBar-Mobile #nav-menu #nav-close {
+  cursor: pointer;
+  width: 35px;
+  height: 35px;
+  margin-left: 53px;
+  position: absolute;
+  left: 86px;
+  top: -18px;
+}
+
+#NavBar-Mobile #nav-menu a {
+  height: 90px;
+  color: black;
+}
+
+@media screen and (max-width: 1175px) {
+  #d5 {
+    width: 100%;
+    margin-left: 0;
+  }
+  #d7 {
+    display: none;
+  }
+  #NavBar-Mobile {
+    display: none;
+  }
+  .d1 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  #Footer {
+    display: none;
+    height: 0px;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  #NavBar-Mobile #nav-menu {
+    left: 73%;
+    margin-top: 10%;
+    width: 27%;
+  }
+  #NavBar-Mobile {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .d1 {
+    display: none;
+  }
+  #Propos #Part2 .Padr {
+    font-size: 10px;
+  }
+  #parts4 {
+    display: none;
+    height: 0px;
+  }
+}
+
+@media screen and (max-width: 670px) {
+  #NavBar-Mobile #nav-menu {
+    left: 67%;
+    margin-top: 10%;
+    width: 32%;
+  }
+  #NavBar-Mobile {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .d1 {
+    display: none;
+  }
+  #Propos #Part2 .Padr {
+    font-size: 10px;
+  }
+  #parts4 {
+    display: none;
+    height: 0;
+  }
+}
+/*# sourceMappingURL=Compte.css.map */

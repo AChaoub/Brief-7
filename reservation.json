@@ -1,0 +1,41 @@
+[{
+        "id": 1,
+        "Email": "Achraf.chaoub@hotmail.fr",
+        "DateDepart": "2020-04-28",
+        "DateRetour": "2020-04-29",
+        "Categorie": "Utility",
+        "Modele": "Renault Trafic ou similaire"
+    },
+    {
+        "id": 2,
+        "Email": "amina@gmail.com",
+        "DateDepart": "2020-04-21",
+        "DateRetour": "2020-04-30",
+        "Categorie": "Prestige",
+        "Modele": "Peugeot 208 ou similaire"
+    },
+    {
+        "id": 3,
+        "Email": "amina@gmail.com",
+        "DateDepart": "2020-04-22",
+        "DateRetour": "2020-04-19",
+        "Categorie": "Prestige",
+        "Modele": "Fiat 500 ou similaire"
+    },
+    {
+        "id": 4,
+        "Email": "amina@gmail.com",
+        "DateDepart": "2020-04-29",
+        "DateRetour": "2020-04-25",
+        "Categorie": "Utiliy",
+        "Modele": "Mercedes Sprinter ou similaire"
+    },
+    {
+        "id": 5,
+        "Email": "amina@gmail.com",
+        "DateDepart": "2020-04-28",
+        "DateRetour": "2020-04-29",
+        "Categorie": "Mariage",
+        "Modele": "RollsRoyce SUV ou similaire"
+    }
+]

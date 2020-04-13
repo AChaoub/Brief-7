@@ -1,0 +1,17 @@
+{
+  "name": "Inscription",
+  "version": "1.0.0",
+  "description": "",
+  "main": "inscription.js",
+  "scripts": {
+    "start": "nodemon Ausy.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-handlebars": "^4.0.2",
+    "nodemon": "^2.0.3"
+  }
+}

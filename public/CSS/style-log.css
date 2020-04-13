@@ -1,0 +1,856 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+#NavBar-Mobile {
+  display: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  position: absolute;
+}
+
+#NavBar-Mobile #nav-header {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding-left: 10px;
+  padding-top: 5px;
+}
+
+#NavBar-Mobile #nav-header #nav-menu-icon {
+  position: absolute;
+  left: 91%;
+  top: 41%;
+  cursor: pointer;
+}
+
+#NavBar-Mobile #nav-header #nav-menu-icon #menu {
+  width: 35px;
+  height: 35px;
+}
+
+#NavBar-Mobile #nav-header #nav-menu-icon #nav-menu-logo img {
+  width: 180px;
+}
+
+#NavBar-Mobile #nav-header #nav-menu-logo img {
+  width: 180px;
+}
+
+#NavBar-Mobile #nav-menu {
+  left: 85%;
+  margin-top: 5%;
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: rgba(255, 255, 255, 0.89);
+  width: 15%;
+  border-top-left-radius: 30%;
+  border-bottom-left-radius: 30%;
+}
+
+#NavBar-Mobile #nav-menu #nav-close {
+  cursor: pointer;
+  width: 35px;
+  height: 35px;
+  margin-left: 53px;
+  position: absolute;
+  left: 86px;
+  top: -18px;
+}
+
+#NavBar-Mobile #nav-menu a {
+  height: 90px;
+  color: black;
+}
+
+.d1 {
+  width: 100%;
+  height: 90px;
+  background-color: black;
+  z-index: 2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+}
+
+.d1 #image {
+  width: 90%;
+  z-index: 3;
+  margin-left: 3%;
+  margin-top: 1%;
+}
+
+.d1 #MenuB {
+  width: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.d1 #MenuB .d2 {
+  width: auto;
+  height: 50px;
+}
+
+a {
+  list-style-type: none;
+  text-decoration: none;
+  color: #f7f7f7;
+  font-size: 30px;
+  margin-left: 40px;
+  font-family: "Oswald";
+}
+
+a:hover {
+  border-bottom: solid 2px white;
+}
+
+#imgP {
+  width: auto;
+  height: 250px;
+  background-color: #f7f7f7;
+  border-top: solid black 8px;
+}
+
+#imgP img {
+  width: auto;
+  height: 250px;
+  margin-left: 20%;
+}
+
+.blank {
+  width: auto;
+  height: 20px;
+}
+
+span {
+  color: black;
+}
+
+#Conts {
+  width: 70%;
+  margin-left: 15%;
+  background-color: #f7f7f7;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  height: 200px;
+}
+
+#Conts #Par1 {
+  margin-left: 5%;
+  width: 50%;
+  font-family: "Oswald";
+  font-weight: normal;
+}
+
+#Conts #Par1 h1 {
+  color: black;
+  font-weight: 100;
+}
+
+#Conts #Par1 h3 {
+  font-weight: 200;
+}
+
+#Conts #Par2 {
+  width: 50%;
+  font-family: "Oswald";
+  font-weight: normal;
+  margin-left: 5%;
+  margin-top: 2.5%;
+}
+
+#Conts #Par2 p {
+  line-height: 200%;
+  font-size: 16px;
+}
+
+#Form, #CarteB {
+  width: 70%;
+  margin-left: 15%;
+  background-color: #f7f7f7;
+  height: 550px;
+}
+
+#Form img, #CarteB img {
+  width: 100%;
+  height: 90px;
+}
+
+#Form #div2, #CarteB #div2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  margin-left: 4%;
+  width: 100%;
+  height: 50px;
+}
+
+#Form #div2 .N, #CarteB #div2 .N {
+  width: 45%;
+  font-family: "Oswald";
+}
+
+#Form #div2 .N::-webkit-input-placeholder, #CarteB #div2 .N::-webkit-input-placeholder {
+  color: black;
+  font-size: 14px;
+  margin-top: -5px;
+  font-family: "Oswald";
+}
+
+#Form #div2 .N:-ms-input-placeholder, #CarteB #div2 .N:-ms-input-placeholder {
+  color: black;
+  font-size: 14px;
+  margin-top: -5px;
+  font-family: "Oswald";
+}
+
+#Form #div2 .N::-ms-input-placeholder, #CarteB #div2 .N::-ms-input-placeholder {
+  color: black;
+  font-size: 14px;
+  margin-top: -5px;
+  font-family: "Oswald";
+}
+
+#Form #div2 .N::placeholder, #CarteB #div2 .N::placeholder {
+  color: black;
+  font-size: 14px;
+  margin-top: -5px;
+  font-family: "Oswald";
+}
+
+#Form #div2 .P, #CarteB #div2 .P {
+  width: 46%;
+  margin-left: .5%;
+  font-family: "Oswald";
+}
+
+#Form #div2 .P::-webkit-input-placeholder, #CarteB #div2 .P::-webkit-input-placeholder {
+  color: black;
+  font-size: 14px;
+  margin-top: -5px;
+  font-family: "Oswald";
+}
+
+#Form #div2 .P:-ms-input-placeholder, #CarteB #div2 .P:-ms-input-placeholder {
+  color: black;
+  font-size: 14px;
+  margin-top: -5px;
+  font-family: "Oswald";
+}
+
+#Form #div2 .P::-ms-input-placeholder, #CarteB #div2 .P::-ms-input-placeholder {
+  color: black;
+  font-size: 14px;
+  margin-top: -5px;
+  font-family: "Oswald";
+}
+
+#Form #div2 .P::placeholder, #CarteB #div2 .P::placeholder {
+  color: black;
+  font-size: 14px;
+  margin-top: -5px;
+  font-family: "Oswald";
+}
+
+#Form .In, #CarteB .In {
+  margin-left: 4%;
+  width: 92%;
+  height: 50px;
+}
+
+#Form .In::-webkit-input-placeholder, #CarteB .In::-webkit-input-placeholder {
+  color: black;
+  font-size: 14px;
+  margin-top: -5px;
+  font-family: "Oswald";
+}
+
+#Form .In:-ms-input-placeholder, #CarteB .In:-ms-input-placeholder {
+  color: black;
+  font-size: 14px;
+  margin-top: -5px;
+  font-family: "Oswald";
+}
+
+#Form .In::-ms-input-placeholder, #CarteB .In::-ms-input-placeholder {
+  color: black;
+  font-size: 14px;
+  margin-top: -5px;
+  font-family: "Oswald";
+}
+
+#Form .In::placeholder, #CarteB .In::placeholder {
+  color: black;
+  font-size: 14px;
+  margin-top: -5px;
+  font-family: "Oswald";
+}
+
+#Form #Cpass, #Form #CEmail, #CarteB #Cpass, #CarteB #CEmail {
+  background-color: rgba(128, 128, 128, 0.411);
+  border: none;
+  pointer-events: none;
+}
+
+#DateN {
+  width: 70%;
+  margin-left: 15%;
+  background-color: #f7f7f7;
+  height: 180px;
+}
+
+#DateN #p1 {
+  font-family: "Oswald";
+  font-size: 24px;
+}
+
+#DateN #p2 {
+  font-family: "Oswald";
+  font-size: 14px;
+}
+
+#DateN p {
+  font-family: "Oswald";
+  font-size: 14px;
+}
+
+.div3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  width: 100%;
+  margin-left: 2.5%;
+}
+
+#Permis {
+  width: 70%;
+  margin-left: 15%;
+  background-color: #f7f7f7;
+  height: 200px;
+}
+
+#Permis p {
+  font-family: "Oswald";
+  font-size: 24px;
+}
+
+#Permis .p1 {
+  font-size: 14px;
+}
+
+.Selec {
+  width: 92%;
+  margin-left: 4%;
+  height: 50px;
+}
+
+.div3 {
+  width: 100%;
+}
+
+.div3 .Annee {
+  width: 30%;
+}
+
+.div3 p {
+  font-size: 12px;
+  font-family: "Oswald";
+  margin-left: 25%;
+}
+
+#polit {
+  font-size: 15px;
+  font-family: "Oswald";
+  margin-left: 15%;
+}
+
+#polit .Acc {
+  color: #308DFF;
+  text-decoration: underline;
+}
+
+#CarteB {
+  width: 70%;
+  margin-left: 15%;
+  background-color: #f7f7f7;
+  height: 200px;
+}
+
+#CarteB p {
+  font-size: 24px;
+  font-family: "Oswald";
+}
+
+#radio {
+  margin-left: 15%;
+}
+
+#radio #RadioPar {
+  font-size: 15px;
+  font-family: "Oswald";
+}
+
+#radio .Acc {
+  color: #308DFF;
+  text-decoration: underline;
+}
+
+#PAcc {
+  font-size: 15px;
+  font-family: "Oswald";
+  margin-left: 15%;
+}
+
+#BtnAd {
+  width: 25%;
+  height: 50px;
+  margin-left: 60%;
+  font-size: 15px;
+  font-family: "Oswald";
+}
+
+#BtnAd:hover {
+  background-color: black;
+  color: #f7f7f7;
+  font-size: 16px;
+  transform: scale(0.95);
+  -webkit-transform: scale(0.95);
+  -moz-transform: scale(0.95);
+  -ms-transform: scale(0.95);
+  -o-transform: scale(0.95);
+  border-style: none;
+}
+
+#Footer {
+  width: 100%;
+  height: 300px;
+}
+
+#Footer #parts4 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  width: 100%;
+  height: 280px;
+  background-color: black;
+  font-size: 16px;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+#Footer #parts4 p {
+  color: #f7f7f7;
+  font-family: "Oswald";
+  margin-left: 10%;
+}
+
+#Footer #parts4 #Aide, #Footer #parts4 #Societe, #Footer #parts4 #Liens, #Footer #parts4 #Reseaux {
+  width: 20%;
+  height: 300px;
+  cursor: pointer;
+}
+
+#Footer #parts4 #Aide #Newsl, #Footer #parts4 #Societe #Newsl, #Footer #parts4 #Liens #Newsl, #Footer #parts4 #Reseaux #Newsl {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  height: 50px;
+}
+
+#Footer #parts4 #Aide #Newsl #New, #Footer #parts4 #Societe #Newsl #New, #Footer #parts4 #Liens #Newsl #New, #Footer #parts4 #Reseaux #Newsl #New {
+  width: 70%;
+  margin-left: 10%;
+  height: 30px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+#Footer #parts4 #Aide #Newsl #Ok, #Footer #parts4 #Societe #Newsl #Ok, #Footer #parts4 #Liens #Newsl #Ok, #Footer #parts4 #Reseaux #Newsl #Ok {
+  width: 20%;
+  height: 30px;
+  font-family: "Oswald";
+  background-color: black;
+  color: #f7f7f7;
+  font-size: 12px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+#Footer #parts4 #Aide #pay, #Footer #parts4 #Societe #pay, #Footer #parts4 #Liens #pay, #Footer #parts4 #Reseaux #pay {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  width: 100%;
+  height: 30px;
+}
+
+#Footer #parts4 #Aide #pay div, #Footer #parts4 #Societe #pay div, #Footer #parts4 #Liens #pay div, #Footer #parts4 #Reseaux #pay div {
+  width: 20%;
+  margin-left: 10%;
+}
+
+#Footer #parts4 #Aide #pay div img, #Footer #parts4 #Societe #pay div img, #Footer #parts4 #Liens #pay div img, #Footer #parts4 #Reseaux #pay div img {
+  width: 30px;
+  height: 30px;
+}
+
+.SousT {
+  text-decoration: underline;
+  font-size: 24px;
+}
+
+#Coorp {
+  height: 20px;
+  width: 100%;
+  background-color: #f7f7f7;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+}
+
+#Coorp #NomSoc, #Coorp #Droits, #Coorp #Cor {
+  width: 30%;
+  margin-left: 2%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#Coorp #NomSoc p, #Coorp #Droits p, #Coorp #Cor p {
+  text-align: center;
+  font-family: "Oswald";
+  font-size: 15px;
+  color: Black;
+}
+
+.Upper {
+  font-family: "Oswald";
+}
+
+#ParagVerf1 {
+  font-family: "Oswald";
+  font-size: 12px;
+  margin-left: 5%;
+}
+
+#ParagVerf2 {
+  font-family: "Oswald";
+  font-size: 12px;
+  margin-left: 5%;
+}
+
+#ParagVerf3 {
+  font-family: "Oswald";
+  font-size: 12px;
+  margin-left: 5%;
+}
+
+#ParagVerf4 {
+  font-family: "Oswald";
+  font-size: 12px;
+  margin-left: 5%;
+}
+
+#ParagVerf5 {
+  font-family: "Oswald";
+  font-size: 12px;
+  margin-left: 5%;
+}
+
+#ParagVerf6 {
+  font-family: "Oswald";
+  font-size: 12px;
+  margin-left: 5%;
+}
+
+#sincrire {
+  display: none;
+  width: 100%;
+  height: 500%;
+  background-color: rgba(0, 0, 0, 0.808);
+  position: absolute;
+  top: 0;
+}
+
+#sincrire #logoInscrip {
+  width: 60%;
+  height: 100px;
+  background-color: black;
+  margin-left: 20%;
+  margin-top: 7.5%;
+}
+
+#sincrire #logoInscrip img {
+  margin-left: 5%;
+  width: 40%;
+  height: 100px;
+  float: left;
+}
+
+#sincrire #logoInscrip a {
+  font-size: 20px;
+  font-family: "Oswald";
+  margin-left: 43%;
+  color: #f7f7f7;
+  margin-top: 90px;
+  list-style-type: none;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#sincrire #Inscrip {
+  width: 60%;
+  height: 400px;
+  margin-left: 20%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  background-color: white;
+}
+
+#sincrire #Inscrip #pan1 {
+  width: 60%;
+  background-color: white;
+}
+
+#sincrire #Inscrip #pan1 p {
+  margin-left: 10%;
+  font-size: 18px;
+  font-family: "Oswald";
+}
+
+#sincrire #Inscrip #pan1 input {
+  margin-left: 10%;
+  width: 50%;
+  height: 20px;
+  font-size: 14px;
+  font-family: "Oswald";
+}
+
+#sincrire #Inscrip #pan1 #check {
+  float: left;
+  margin-left: -12%;
+}
+
+#sincrire #Inscrip #pan1 label {
+  font-size: 18px;
+  font-family: "Oswald";
+  margin-left: -20%;
+}
+
+#sincrire #Inscrip #pan1 #SeConn {
+  color: #f7f7f7;
+  width: 80%;
+  height: 40px;
+  border-radius: 5px;
+  background-color: black;
+  font-family: "Oswald";
+  font-size: 15px;
+  margin-left: 10%;
+  border-style: none;
+  cursor: pointer;
+}
+
+#sincrire #Inscrip #pan2 {
+  width: 40%;
+  background-color: black;
+}
+
+#sincrire #Inscrip #pan2 p {
+  text-align: center;
+  font-size: 24px;
+  font-family: "Oswald";
+  color: #f7f7f7;
+}
+
+#sincrire #Inscrip #pan2 #p1 {
+  font-size: 18px;
+  text-align: start;
+  margin-left: 10%;
+}
+
+#sincrire #Inscrip #pan2 ul {
+  margin-left: 10%;
+}
+
+#sincrire #Inscrip #pan2 ul li {
+  font-size: 18px;
+  text-align: start;
+  margin-left: 10%;
+  font-family: "Oswald";
+  color: #f7f7f7;
+  padding-top: 20px;
+}
+
+#sincrire #Inscrip #pan2 #Adherer {
+  color: black;
+  width: 80%;
+  height: 40px;
+  border-radius: 5px;
+  background-color: #f7f7f7;
+  font-family: "Oswald";
+  font-size: 15px;
+  margin-left: 10%;
+  border-style: none;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 850px) {
+  #Footer #parts4 {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1175px) {
+  #NavBar-Mobile {
+    display: none;
+  }
+  .d1 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  #NavBar-Mobile #nav-menu {
+    left: 73%;
+    margin-top: 10%;
+    width: 27%;
+  }
+  #NavBar-Mobile {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .d1 {
+    display: none;
+  }
+  #Footer #parts4 {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 670px) {
+  #NavBar-Mobile #nav-menu {
+    left: 67%;
+    margin-top: 10%;
+    width: 32%;
+  }
+  #NavBar-Mobile {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .d1 {
+    display: none;
+  }
+}
+/*# sourceMappingURL=style-log.css.map */

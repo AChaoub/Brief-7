@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./CSS/style-log.css">
+    <script src="./JS/Sign.js"></script>
+    <script>
+        function visible(){
+            var PageConn = document.getElementById("sincrire");
+            PageConn.style.display ="block";
+        }
+        function cacherConn(){
+            var PageConn = document.getElementById("sincrire");
+            PageConn.style.display ="none";
+        }
+    </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <div id="NavBar-Mobile" >
+        <div id="nav-header">
+            <div id="nav-menu-logo">
+                <img src="./IMG/logo.png"  alt="">
+            </div>
+            <div id="nav-menu-icon">
+                <img src="./IMG/menu.png" alt="" id="menu">
+            </div>
+        </div>
+        <div id="nav-menu" style="display: none;" >
+            <img src="./IMG/close1.png" id="nav-close">
+            <div class="blank"></div>
+            <a href="./test.html" class="nav-menu-item">
+                <span>HOME</span>
+            </a>
+            <a href="./Reservation.html" class="nav-menu-item">
+                <span>RESERVATION</span>
+            </a>
+            <a href="./login.html" class="nav-menu-item">
+                <span>CONNEXION</span>
+            </a>
+        </div>
+    </div>
+    <div class="d1">
+        <div id="image"><img src="./IMG/logo.png" alt=""></div>
+        <div id="MenuB">
+            <div class="d2"><a href="./Acceuil.html">HOME</a></div>
+            <div class="d2" ><a href="./Reservation.html">RESERVATION</a></div>
+            <div  class="d2"><a  href="#">CONNEXION</a></div>
+        </div>
+    </div>
+    <div class="blank"></div>
+    <div class="blank"></div>
+    <div class="blank"></div>
+    <div class="blank"></div>
+    <div class="blank"></div>
+    <div class="blank"></div>
+    <div id="imgP">
+        <img src="./IMG/cadillac.png" alt="">
+    </div>
+    <div class="blank"></div>
+    <form action="/User" method="GET"></form>
+    <div id="Conts">
+        <div id="Par1">
+            <h1>Commencez à gagner des récompenses avec Car&Rent</h1>
+            <h3>Inscription gratuite ! Réserver un véhicule n'a jamais été plus simple, rapide et intéressant</h3>
+        </div>
+        <div id="Par2">
+            <p><span>✔</span>  Fini l’attente au comptoir : votre contrat est déjà prêt à votre arrivée</p>
+            <p><span>✔</span> Échangez vos points contre des journées de location offertes ou pour bénéficier du statut supérieur</p>
+            <p><span>✔</span> Accédez aux statuts Elite au fil de vos locations.</p>
+        </div>
+    </div>
+    <div class="blank"></div>
+    <form action="/register" method="POST">
+        <div id="Form">
+            <img src="./IMG/black.png" alt="">
+            <div class="blank"></div>
+            <div id="div2">
+                <input type="text" class="Upper N" id="N" name="Prenom" placeholder="Prénom(sans accent)*" >
+                <input type="text" class="Upper P" id="P" name="Nom"  placeholder="Nom(sans accent)*">
+            </div>
+            <div id="ParagVerf6"></div>
+            <div class="blank"></div>
+            <input type="email" class="In" name="Email"  id="Email" placeholder="Par Email*">
+            <div class="blank"></div>
+            <input type="email" class="In" name="CEmail" id="CEmail" placeholder="Confirmez votre Email*">
+            <p id="ParagVerf1"></p>
+            <div class="blank"></div>
+            <input type="password" class="In" name="Pass" id="pass" placeholder="Mot de passe*">
+            <div id="ParagVerf5"></div>
+            <div class="blank"></div>
+            <input type="password" class="In" id="Cpass"  placeholder="Confimez votre mot de passe*">
+            <p id="ParagVerf2"></p>
+            <div class="blank"></div>
+            <input type="tel" class="In Upper" name="Tel" placeholder="Télephone*" id="tel">
+            <p id="ParagVerf4"></p>
+            <div class="blank"></div>
+            </div>
+            <div class="blank"></div>
+            <div id="DateN">
+                <p id="p1">Date de naissance</p>
+                <p id="p2">Vous devez être âgé(e) d'au moins 21 ans pour vous inscrire</p>
+                <div class="blank"></div>
+                <div class="div3" >
+                    <div class="Annee" >
+                        <p>Année de naissance</p>
+                        <select name="Annee" class="Selec" class="In" id="annee"  >
+                            <option value="2020">2020</option>
+                            <option value="2019">2019</option>
+                            <option value="2018">2018</option>
+                            <option value="2017">2017</option>
+                            <option value="2016">2016</option>
+                            <option value="2015">2015</option>
+                            <option value="2014">2014</option>
+                            <option value="2013">2013</option>
+                            <option value="2012">2012</option>
+                            <option value="2011">2011</option>
+                            <option value="2010">2010</option>
+                            <option value="2009">2009</option>
+                            <option value="2008">2008</option>
+                            <option value="2007">2007</option>
+                            <option value="2006">2006</option>
+                            <option value="2005">2005</option>
+                            <option value="2004">2004</option>
+                            <option value="2004">2004</option>
+                            <option value="2003">2003</option>
+                            <option value="2002">2002</option>
+                            <option value="2001">2001</option>
+                            <option value="2000">2000</option>
+                            <option value="1999">1999</option>
+                            <option value="1998">1998</option>
+                            <option value="1997">1997</option>
+                            <option value="1996">1996</option>
+                            <option value="1995">1995</option>
+                            <option value="1994">1994</option>
+                            <option value="1993">1993</option>
+                            <option value="1992">1992</option>
+                            <option value="1991">1991</option>
+                            <option value="1990">1990</option>
+                            <option value="1989">1989</option>
+                            <option value="1988">1988</option>
+                        </select>
+                    </div>
+                    <div class="Annee">
+                        <p>Mois de naissance</p>
+                        <select name="Mois" class="Selec" class="In" >
+                            <option value="1">JANVIER</option>
+                            <option value="2">FEVRIER</option>
+                            <option value="3">MARS</option>
+                            <option value="4">AVRIL</option>
+                            <option value="5">MAI</option>
+                            <option value="6">JUIN</option>
+                            <option value="7">JUILLET</option>
+                            <option value="8">AOUT</option>
+                            <option value="9">SEPTEMBRE</option>
+                            <option value="10">OCTOBRE</option>
+                            <option value="11">NOVEMBRE</option>
+                            <option value="12">DECEMBRE</option>
+                        </select>
+                    </div>
+                    <div class="Annee">
+                        <p>Jour de naissance</p>
+                        <select name="Jour" class="Selec" class="In" >
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                            <option value="11">11</option>
+                            <option value="12">12</option>
+                            <option value="13">13</option>
+                            <option value="14">14</option>
+                            <option value="15">15</option>
+                            <option value="16">16</option>
+                            <option value="17">17</option>
+                            <option value="18">18</option>
+                            <option value="19">19</option>
+                            <option value="20">20</option>
+                            <option value="21">21</option>
+                            <option value="22">22</option>
+                            <option value="23">23</option>
+                            <option value="24">24</option>
+                            <option value="25">25</option>
+                            <option value="26">26</option>
+                            <option value="27">27</option>
+                            <option value="28">28</option>
+                            <option value="29">29</option>
+                            <option value="30">30</option>
+                            <option value="31">31</option>
+                        </select>
+                    </div>
+                </div>
+                <p id="ParagVerf3"></p>
+            </div>
+            </div>
+            <div class="blank"></div>
+            <div id="Permis">
+                <p >Informations sur le permis de conduire du conducteur</p>
+                <div class="blank"></div>
+                <select name="PAYS" class="Selec" class="In" >
+                    <option value="France">FRANCE</option>
+                    <option value="MAROC">MAROC</option>
+                </select>
+                <div class="blank"></div>
+                <div class="div3" >
+                    <div class="Annee">
+                        <p class="p1">Année d'émission</p>
+                        <select name="PAYS" class="Selec" class="In" >
+                            <option value="France">2020</option>
+                            <option value="MAROC">2019</option>
+                            <option value="France">2018</option>
+                            <option value="MAROC">2017</option>
+                            <option value="France">2016</option>
+                            <option value="MAROC">2015</option>
+                            <option value="France">2014</option>
+                        </select>
+                    </div>
+                    <div class="Annee">
+                        <p class="p1">Mois d'émission</p>
+                        <select name="PAYS" class="Selec" class="In" >
+                            <option value="France">JANVIER</option>
+                            <option value="MAROC">FEVRIER</option>
+                            <option value="France">MARS</option>
+                            <option value="MAROC">AVRIL</option>
+                            <option value="France">JUIN</option>
+                            <option value="MAROC">JUILLET</option>
+                            <option value="France">AOUT</option>
+                            <option value="France">SEPTEMBRE</option>
+                            <option value="MAROC">OCTOBRE</option>
+                            <option value="France">NOVEMBRE</option>
+                            <option value="France">DECEMBRE</option>
+                        </select>
+                    </div>
+                    <div class="Annee">
+                        <p class="p1">Jour d'émission</p>
+                        <select name="PAYS" class="Selec" class="In" >
+                            <option value="France">1</option>
+                            <option value="MAROC">2</option>
+                            <option value="France">3</option>
+                            <option value="MAROC">4</option>
+                            <option value="France">5</option>
+                            <option value="MAROC">6</option>
+                            <option value="France">7</option>
+                            <option value="France">8</option>
+                            <option value="MAROC">9</option>
+                            <option value="France">10</option>
+                            <option value="MAROC">11</option>
+                            <option value="France">12</option>
+                            <option value="MAROC">13</option>
+                            <option value="France">14</option>
+                            <option value="France">15</option>
+                            <option value="MAROC">16</option>
+                            <option value="France">17</option>
+                            <option value="MAROC">18</option>
+                            <option value="France">5</option>
+                            <option value="MAROC">6</option>
+                            <option value="France">7</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="blank"></div>
+            <p id="polit">Pour en savoir plus, consultez notre <span class="Acc"> Politique de confidentialité..</span></p>
+            <div class="blank"></div>
+            <div id="radio" >
+                <input type="radio"  checked>
+                <label for="huey" id="RadioPar"> Oui - Je souhaite recevoir des e-mails promotionnels de Hertz.</label>
+            </div>
+            <div class="blank"></div>
+            <div id="CarteB" >
+                <p id="p1">Informations sur la carte de crédit</p> 
+                <div class="blank"></div>          
+                <div id="div2">
+                    <input type="text"  class="Upper N" placeholder="Carte de Crédit *">
+                    <input type="text"  class="Upper P"  placeholder="Numéro de carte de crédit *">
+                </div>
+                <div class="blank"></div>
+                <div id="div2">
+                    <input type="text" class="N" placeholder="Mois *">
+                    <input type="text" class="P"  placeholder="Année *">
+                </div>
+                <div class="blank"></div>
+                <div class="blank"></div>
+            </div>
+            <div class="blank"></div>
+            <p id="PAcc">Vous pouvez définir vos préférences telles que des services à valeur ajoutée en vous connectant à votre profil Gold Plus Rewards sur hertz.com.</span></p>
+            <div class="blank"></div>
+            <div id="radio" >
+                <input type="radio"  checked>
+                <label for="huey" id="RadioPar">  J'ai lu et <span class="Acc"> j'accepte les Conditions générales .</span></label>
+            </div>
+            <div class="blank"></div>
+            <input type="submit" value="Adhérer" id="BtnAd">
+            <div class="blank"></div>
+        </div>
+    </form>
+    <div class="blank"></div>
+    <div id="sincrire">
+        <div id="logoInscrip">
+            <img src="./IMG/logo.png" alt="">
+            <a href="javascript:cacherConn()">FERMER ⤫</a>
+        </div>
+        <div id="Inscrip">
+            <div id="pan1"> 
+                <div class="blank"></div>
+                <div class="blank"></div>
+                <p>identifiant Gold Plus Rewards:*</p>
+                <input type="text" class="P">
+                <div class="blank"></div>
+                <div class="blank"></div>
+                <p>Mot de passe:*</p>
+                <input type="text" class="P">
+                <div class="blank"></div>
+                <div class="blank"></div>
+                <input type="checkbox" id="check" name="">
+                <label for="check">Enregistrer mon numéro de membre dans le navigateur</label>
+                <div class="blank"></div>
+                <div class="blank"></div>
+                <div ><input id="SeConn" type="button" value="SE CONNECTER" ></div>
+            </div>
+            <div id="pan2">
+                <div class="blank"></div>
+                <p>Pas encore membre?</p>
+                <div class="blank"></div>
+                <div class="blank"></div>
+                <p id="p1">Adhésion GRATUITE ! Grâce au programme CAR&RENT+ , la location de voiture n’a jamais été aussi facile, rapide et avantageuse.</p>
+                <ul>
+                    <li>C'est rapide</li>
+                    <li>C'est Flexible</li>
+                    <li>C'est facile</li>
+                </ul>
+                <div class="blank"></div>
+                <div ><input id="Adherer" type="button" value="Adhérer maintenant gratuitement" ></div>
+                <div class="blank"></div>
+            </div>
+        </div>
+    </div>
+    <div class="blank"></div>
+    <div class="blank"></div>
+    <div id="Footer">
+        <div id="parts4">
+            <div id="Aide">
+                <p class="SousT">AIDE & Support</p>
+                <div class="blank"></div>
+                <div class="blank"></div>
+                <p>Contactez-nous</p>
+                <div class="blank"></div>
+                <p>Conditions générales d’utilisation</p>
+                <div class="blank"></div>
+                <p>Conditions générales de ventes</p>
+                <div class="blank"></div>
+                <p>FAQ – Questions fréquentes</p>
+                <div class="blank"></div>
+                <p>Mon compte client</p>
+            </div>
+            <div id="Societe">
+                <p class="SousT">L’ENTREPRISE HERTZ CORSE</p>
+                <div class="blank"></div>
+                <div class="blank"></div>
+                <p>A propos de Hertz Corse</p>
+                <div class="blank"></div>
+                <p>Pourquoi choisir Hertz Corse ?</p>
+                <div class="blank"></div>
+                <p>Politique en matière de données</p>
+                <div class="blank"></div>
+                <p>Nos partenaires</p>
+                <div class="blank"></div>
+                <p>Nos agences</p>
+            </div>
+            <div id="Liens">
+                <p class="SousT">LIENS RAPIDES</p>
+                <div class="blank"></div>
+                <div class="blank"></div>
+                <p>Voitures de prestige</p>
+                <div class="blank"></div>
+                <p>Voitures D'utilitaires</p>
+                <div class="blank"></div>
+                <p>Véhicules de mariage</p>
+                <div class="blank"></div>
+                <p>Services CAR&Rent </p>
+                <div class="blank"></div>
+                <p>Découvrir le Maroc</p>
+            </div>
+            <div id="Reseaux">
+                <p class="SousT">Restons connectés</p>
+                <div class="blank"></div>
+                <div class="blank"></div>
+                <p>Profitez des bons plans en avant première</p>
+                <div class="blank"></div>
+                <div id="Newsl">
+                        <input id="New" type="email">
+                        <input id="Ok" type="submit" value="OK">
+                </div>
+                <div class="blank"></div>
+                <div class="blank"></div>
+                <div id="pay">
+                    <div><img src="./IMG/facebook.png" alt=""></div>
+                    <div><img src="./IMG/twitter.png" alt=""></div>
+                    <div><img src="./IMG/whatsapp.png" alt=""></div>
+                    <div><img src="./IMG/telegram.png" alt=""></div>
+                </div>
+            </div>
+        </div>
+        <div id="Coorp">
+            <div id="NomSoc"><p>CAR&RENT Chaoub</p></div>
+            <div id="Droits"><p>© 2020</p></div>
+            <div id="Cor"><p>TOus les droits réservés</p></div>
+        </div>
+    </div> 
+    
+</body>
+</html>

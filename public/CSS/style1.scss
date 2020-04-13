@@ -1,0 +1,708 @@
+$fontP : 'Bebas Neue';
+$color1:#f7f7f7;
+@mixin EmplacP() {
+    width:94%;
+    margin-left: 3%; 
+} 
+@mixin FlexR() {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+@mixin FlexC() {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+@mixin images {
+    @for $i from 1 through 6 {
+        .s#{$i} {
+            background-image: url('../IMG/S#{$i}.jpg');
+            width: auto;
+            height:100%;
+            z-index: -20;
+        }
+    }
+    
+}
+@mixin Slides {
+    @for $i from 1 through 3{
+        #Slides#{$i} {
+            @include EmplacP();
+            height: 400px;
+            background-image: url('../IMG/Slide#{$i}.jpg');
+            background-size:auto;
+            background-repeat: repeat;
+            @include FlexR();
+            box-sizing: content-box;
+            align-items: flex-end;
+            .BarreG , .BarreD{
+                width: 10%;
+                height: 90px;
+                background-color: rgba(255, 255, 255, 0.664);
+                img{
+                    height :50px;
+                    margin-left: 25%;
+                    margin-top: 20%;
+                }
+            &:hover{
+                    opacity: 0.9;
+                }
+            }
+            #ContBlack{
+                width: 80%;
+                height: 90px;
+                background-color: rgba(0, 0, 0, 0.459);
+                p{
+                    color: $color1;
+                    font-size: 38px;
+                    text-align: center;
+                    font-family: $fontP;
+                    margin-top: 2.5%;
+                }
+            }
+        }
+                
+    }
+}
+@mixin fontPar {
+    p{
+        color: $color1;
+        font-family: $fontP;
+        margin-left: 10%;
+    }  
+}
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color:white;
+}
+.d1{
+    width: 100%;
+    height: 90px;
+    background-color: black;
+    z-index: 2;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    #image{
+        width: 90%;
+        z-index: 3;
+        margin-left: 3%;
+        margin-top: 1%;
+    }
+    #MenuB{
+        width: auto;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: flex-end;
+        align-items: flex-end;
+
+        .d2{
+            width: auto;
+            height: 50px;
+        }
+    }
+    @media screen and (max-width:850px) {
+        display: none;
+    }
+}
+a{
+    list-style-type: none;
+    text-decoration: none;
+    color:$color1;
+    font-size: 30px;
+    margin-left: 40px;
+    font-family: $fontP;
+}
+a:hover{
+    border-bottom: solid 2px white;
+}
+.d3{
+    height: 500px;
+    width: 100%;
+    background-image: url(../IMG/Capture.png);
+    background-repeat: repeat;
+    background-size: cover;
+  
+}
+#d4{
+    height: 80px;
+}
+#d5{
+    background-color:$color1;
+    width: auto;
+    height: 100px;
+    margin-left: 33%;
+    @include FlexR();
+    justify-content: center;
+    align-items: center;
+    @media screen and (max-width: 900px){
+        width: 100%;
+        margin-left: 0;
+    }
+    #Par{
+        width: 50%;
+        margin-top:5px;
+        h1 , p{
+        font-family: $fontP;
+        }
+        span{
+            font-size: 15px;  
+        }
+    }
+}
+#Btn{
+    color: $color1;
+    width: 130px;
+    height: 40px;
+    border-radius:5px;
+    background-color: black;
+    font-family: $fontP;
+    font-size: 15px;
+    border-style: none;
+    justify-content: center;
+    cursor: pointer;
+}
+#d7{
+    height: 550px;
+    width: 30%;
+    background-color:$color1;
+    position:absolute;
+    margin-left: 3%;
+    margin-top: -35%;
+    border: black solid 3px;
+    .d8{
+        height: 86px;
+        background-image: url(../IMG/black.png); 
+    }
+    p{
+        text-align: center;
+        font-family: $fontP;
+        color: gray;
+        font-size: 20px;
+        margin-top: 40px;
+    }
+    #Vider{
+        width: 20px;
+        height: 20px;
+        margin-left: 90%;
+    }
+    @media screen and (max-width: 900px){
+        display: none;
+    }
+}
+.blank{
+    width: auto;
+    height: 20px;
+}
+
+#Selec , .T{
+    width:80%;
+    height: 50px;
+    border-radius: 5px;
+    border-style: none;
+    margin-left: 10%;
+    font-family: $fontP;
+    font-size: 15px;
+    list-style: none;
+    text-decoration-style: none;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    -moz-text-decoration-style: none;
+}
+.Date{
+    @include FlexR();
+    .T{
+        width: 80%;
+        height: 50px;
+    }
+}
+#BtnOf{
+    color: $color1;
+    width: 80%;
+    height: 50px;
+    margin-left: 10%;
+    border-radius:5px;
+    background-color: black;
+    font-family: $fontP;
+    font-size: 15px;
+    border-style: none;
+    cursor: pointer;
+}
+#Ofs{
+    @include EmplacP();
+    @include FlexR();
+    height: 300px;
+    background-color: $color1;
+    overflow: hidden;
+    flex-wrap: wrap;
+    @media screen and (max-width: 900px){
+        @include FlexC();
+        flex-wrap: wrap;
+    }
+    .Ofs1{
+        width: 22%;
+        height: 90%;
+        margin-top: 1.5%;
+        margin-left: 2.5%;
+        background-color: white;
+        @media screen and (max-width: 900px){
+            width: 30%;
+            height: auto;
+            overflow: visible;
+            
+        }
+        .yel{
+            width: 100%;
+            height:60px;
+            background-size: contain;
+            z-index: 3;
+        }
+        .img1{
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+        @include images();
+        .z{
+            width: 120px;
+            height: 80px;
+            background-image: linear-gradient(to right, black ,rgba(51, 45, 45, 0.356) );
+            margin-left: 54%;
+            margin-top: 40%;
+            @include fontPar();
+        }
+        .z1{
+            width: 120px;
+            height: 80px;
+            background-image: linear-gradient(to right, black ,rgba(51, 45, 45, 0.356) );
+            margin-top: 40%;
+            @include fontPar();
+        }
+    }  
+}
+ @include Slides();
+#Slides{
+    @include EmplacP();
+    height: 400px;
+    background-color: $color1;
+    overflow: hidden;
+}
+#Propos{
+    @include EmplacP();
+    @include FlexR();
+    height: 520px;
+    @media screen and (max-width: 900px){
+        @include FlexC();
+        flex-wrap: nowrap;
+    }
+    #Part1{
+        width: 60%;
+        background-color: $color1;
+        #black{
+            height: 10px;
+            width: 40px;
+            float: left;
+            margin-left: 10%; 
+            background-color: black;  
+            margin-left: 6%;
+        }
+        p{
+            margin-left: 13%;
+            color: black;
+            font-family: $fontP;
+            font-size: 24px;
+            word-spacing: 2px;
+        }
+        .PPropos
+        {
+            font-size: 15px;
+        }
+        ul{
+            margin-left: 15%;
+            li{
+                font-family: $fontP;
+                font-size: 15px;
+                padding-top: 20px;
+            }
+        }
+        @media screen and (max-width: 900px){
+           width: 100%;
+        }
+    }
+    #Part2{
+        width: 40%;
+        background-color:black;
+        .white{
+            height: 10px;
+            width: 40px;
+            float: left;
+            margin-left: 10%; 
+            background-color: $color1; 
+        }
+        p{
+            margin-left: 21%;
+            color: white;
+            font-family: $fontP;
+            font-size: 24px;
+            word-spacing: 2px; 
+        }
+        .white1{
+            height: 10px;
+            width: 20px;
+            margin-left: 15%;
+
+        }
+        .Padr{
+            font-size: 16px;
+            margin-left: 21%;
+            letter-spacing: 1px;
+        }
+        @media screen and (max-width: 900px){
+            width: 100%;
+         }
+    }
+}
+#sincrire{
+    display:none;
+    width: 100%;
+    height: 500%;
+    background-color: rgba(0, 0, 0, 0.808);
+    position: absolute;
+    top: 0;
+    z-index: 88;
+    #logoInscrip{
+        width: 60%;
+        height:100px;
+        background-color: black;
+        margin-left: 20%;
+        margin-top: 7.5%;
+        img{
+            margin-left: 5%;
+            width: 40%;
+            height: 100px;
+            float: left;
+        }
+        a{
+            font-size: 20px;
+            font-family: $fontP;
+            margin-left: 43%;
+            color: $color1;
+            margin-top: 90px;
+            list-style-type: none;
+            text-decoration: none;
+            cursor: pointer;
+        }
+    }
+    #Inscrip{
+        width: 60%;
+        height: 400px;
+        margin-left: 20%;
+        @include FlexR();
+        background-color: white;
+        #pan1{
+            width: 60%;
+            background-color: rgb(255, 255, 255);
+            p{
+                margin-left: 10%;
+                font-size: 18px;
+                font-family: $fontP;
+            }
+            input{
+                margin-left: 10%;
+                width: 50%;
+                height: 20px;
+                font-size: 14px;
+                font-family: $fontP;
+            }
+            #check{
+                float: left;
+                margin-left: -12%;
+            }
+            label{
+                font-size: 18px;
+                font-family: $fontP;
+                margin-left: -20%;
+            }
+            #SeConn{
+                color: $color1;
+                width: 80%;
+                height: 40px;
+                border-radius:5px;
+                background-color: black;
+                font-family: $fontP;
+                font-size: 15px;
+                margin-left: 10%;
+                border-style: none;
+                cursor: pointer;
+            }
+        }
+        #pan2{
+            width: 40%;
+            background-color: rgb(0, 0, 0);
+            p{
+                //margin-left: 10%;
+                text-align: center;
+                font-size: 24px;
+                font-family: $fontP;
+                color: $color1;
+            }
+            #p1{
+                font-size: 18px;
+                text-align: start;
+                margin-left: 10%;
+            }
+            ul{
+                margin-left: 10%;
+                li{
+                    font-size: 18px;
+                    text-align: start;
+                    margin-left: 10%;
+                    font-family: $fontP;
+                    color: $color1;
+                    padding-top: 20px;
+
+                }
+            }
+            #Adherer{
+                color: black;
+                width: 80%;
+                height: 40px;
+                border-radius:5px;
+                background-color:$color1;
+                font-family: $fontP;
+                font-size: 15px;
+                margin-left: 10%;
+                border-style: none;
+                cursor: pointer;
+
+            }
+        }
+    }
+}
+#Footer{
+    width: 100%;
+    height: 300px;
+    #parts4{
+        @include FlexR();
+        width: 100%;
+        height: 280px;
+        background-color: black;
+        font-size: 16px;
+        @include fontPar();
+        justify-content: space-around;
+        #Aide , #Societe , #Liens ,#Reseaux{
+            width: 20%;
+            height:300px;
+            cursor: pointer;
+            #Newsl{
+                @include FlexR();
+                height: 50px;
+                #New{
+                    width: 70%;
+                    margin-left: 10%;
+                    height: 30px;
+                    border-radius: 10px;
+                    -webkit-border-radius: 10px;
+                    -moz-border-radius: 10px;
+                    -ms-border-radius: 10px;
+                    -o-border-radius: 10px;
+                }
+                #Ok{
+                    width: 20%;
+                    height: 30px;
+                    font-family: $fontP;
+                    background-color: black;
+                    color:$color1;
+                    font-size: 12px;
+                    border-radius: 10px;
+                    -webkit-border-radius: 10px;
+                    -moz-border-radius: 10px;
+                    -ms-border-radius: 10px;
+                    -o-border-radius: 10px;
+                }
+            }
+            #pay{
+                @include FlexR();
+                width: 100%;
+                height: 30px;
+                div{
+                    width:20%;
+                    margin-left: 10%;
+                    img{
+                        width: 30px;
+                        height: 30px;
+                    }
+                }
+               
+            }
+        }
+    }
+}
+
+.SousT{
+    text-decoration: underline;
+    font-size: 24px;
+}
+#Coorp{
+    height:20px;
+    width: 100%;
+    background-color: $color1;
+    @include FlexR();
+    @media screen and (max-width: 900px){
+        display: block;
+    }
+    #NomSoc ,#Droits , #Cor{
+        width: 30%;
+        margin-left: 2%;
+        justify-content: space-between;
+        p{
+            text-align: center;
+            font-family: $fontP;
+            font-size: 15px;
+            color: Black;
+        }
+    }
+}
+
+
+    
+
+
+#NavBar-Mobile {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    position: absolute;
+    #nav-header {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        box-sizing: border-box;
+        padding-left: 10px;
+        padding-top: 5px;
+        #nav-menu-icon {
+            position: absolute;
+            left: 91%;
+            top:41%;
+            cursor: pointer;
+            #menu{
+                width: 35px;
+                height: 35px;
+        
+            }
+            #nav-menu-logo img {
+                width: 180px;
+            }
+        }
+        #nav-menu-logo img {
+            width: 180px;
+        }
+    }
+    #nav-menu{
+        left: 85%;
+        margin-top: 5%;
+        position: absolute;
+        @include FlexC();
+        background-color: rgba(255, 255, 255, 0.788);
+        width: 15%;
+        border-top-left-radius: 30%;
+        border-bottom-left-radius: 30%;
+        #nav-close{
+            cursor: pointer;
+            width: 35px;
+            height: 35px;
+            margin-left: 53px;
+            position: absolute;
+            left: 86px;
+            top: -18px;
+        }
+        a{
+            height : 90px;
+            color: black;
+        }
+    }    
+}
+
+@media screen and (max-width:1175px) {
+    #d5 {
+        width: 100%;
+        margin-left: 0;
+    }
+    #d7{
+        display: none;
+    }
+    
+    #NavBar-Mobile{
+        display: none;
+    }
+    .d1{
+        display: flex;
+    }
+    #Footer{
+        display: none;
+        height: 0px;
+ 
+    }
+}
+@media screen and (max-width:850px) {
+    #NavBar-Mobile #nav-menu {
+        left: 73%;
+        margin-top: 10%;
+        width: 27%;
+    }
+    #NavBar-Mobile{
+        display: flex;
+    }
+    .d1{
+        display: none;
+    }
+    #Propos #Part2 .Padr {
+        font-size: 10px;
+    }
+    #parts4{
+        display: none;
+        height: 0px;
+    }
+}
+
+
+
+
+@media screen and (max-width:670px) {
+    #NavBar-Mobile #nav-menu {
+        left: 67%;
+        margin-top: 10%;
+        width: 32%;
+    }
+    #NavBar-Mobile{
+        display: flex;
+    }
+    .d1{
+        display: none;
+    }
+    #Propos #Part2 .Padr {
+        font-size: 10px;
+    
+    }
+    #parts4{
+        display: none;
+        height: 0;
+    }
+    
+}
+
+
+
+

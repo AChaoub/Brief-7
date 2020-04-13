@@ -1,0 +1,57 @@
+[
+    {
+        "id": 1,
+        "Categorie" : "Prestige",
+        "Modele"  :"Fiat 500 ou similaire"
+    },
+    {
+        "id": 2,
+        "Categorie" : "Prestige",
+        "Modele"  :"Peugeot 208 ou similaire"
+    },
+    {
+        "id": 3,
+        "Categorie" : "Prestige",
+        "Modele"  :"NEW Renault Megane IV ou similaire"
+    },
+    {
+        "id": 4,
+        "Categorie" : "Prestige",
+        "Modele"  :"Nissan Qashqaï ou similaire"
+    },
+    {
+        "id": 5,
+        "Categorie" : "Prestige",
+        "Modele"  :"Mercedes Classe E ou similaire"
+    },
+    {
+        "id": 6,
+        "Categorie" : "Utility",
+        "Modele"  :"Renault Trafic ou similaire"
+    },
+    {
+        "id": 7,
+        "Categorie" : "Utiliy",
+        "Modele"  :"Mercedes Sprinter ou similaire"
+    },
+    {
+        "id": 8,
+        "Categorie" : "Utility",
+        "Modele"  :"Renault Master ou similaire"
+    },
+    {
+        "id": 9,
+        "Categorie" : "Utility",
+        "Modele"  :" Renault Master + ou similaire"
+    },
+    {
+        "id": 10,
+        "Categorie" : "Mariage",
+        "Modele"  :"RollsRoyce SUV ou similaire"
+    },
+    {
+        "id": 11,
+        "Categorie" : "Mariage",
+        "Modele"  :"RangeRover évoque ou similaire"
+    }
+]

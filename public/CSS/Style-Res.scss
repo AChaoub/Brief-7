@@ -1,0 +1,754 @@
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+}
+$fontP : 'Oswald';
+$color1:#f7f7f7;
+@mixin fontPar {
+    p{
+        color: $color1;
+        font-family: $fontP;
+        margin-left: 10%;
+    }  
+}
+@mixin EmplacP() {
+    width:70%;
+    margin-left: 15%; 
+    background-color: $color1;
+} 
+@mixin FlexR() {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+@mixin FlexC() {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+@mixin Placeholder() {
+    &::placeholder {
+        color: black;
+        font-size: 14px;
+        margin-top: -5px;
+        font-family: $fontP;
+      }
+}
+@mixin BTN() {
+    width: 80%;
+    margin-left: 10%;
+    height: 40px;
+    background-color: white;
+    color: black;
+    font-family: $fontP;
+    font-size: 20px;
+    border-style: none;
+    &:hover{
+        color:$color1;
+        background-color: black;
+        transform: scale(1.1);
+        -webkit-transform: scale(1.1);
+        -moz-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+        -o-transform: scale(1.1);
+    }
+}
+
+body{
+    background-color:white;
+    height: auto;
+}
+.blank{
+    width: auto;
+    height: 20px;
+}
+#NavBar-Mobile {
+    display: none;
+    //display: flex;
+    flex-direction: column;
+    width: 100%;
+    position: absolute;
+    #nav-header {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        box-sizing: border-box;
+        padding-left: 10px;
+        padding-top: 5px;
+        #nav-menu-icon {
+            position: absolute;
+            left: 91%;
+            top:41%;
+            cursor: pointer;
+            #menu{
+                width: 35px;
+                height: 35px;
+        
+            }
+            #nav-menu-logo img {
+                width: 180px;
+            }
+        }
+        #nav-menu-logo img {
+            width: 180px;
+        }
+    }
+    #nav-menu{
+        left: 85%;
+        margin-top: 5%;
+        position: absolute;
+        @include FlexC();
+        background-color: rgba(255, 255, 255, 0.89);
+        width: 15%;
+        border-top-left-radius: 30%;
+        border-bottom-left-radius: 30%;
+        #nav-close{
+            cursor: pointer;
+            width: 35px;
+            height: 35px;
+            margin-left: 53px;
+            position: absolute;
+            left: 86px;
+            top: -18px;
+        }
+        a{
+            height : 90px;
+            color: black;
+        }
+    }    
+}
+.d1{
+    width: 100%;
+    height: 90px;
+    background-color: black;
+    z-index: 2;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    #image{
+        width: 90%;
+        z-index: 3;
+        margin-left: 3%;
+        margin-top: 1%;
+    }
+    #MenuB{
+        width: auto;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: flex-end;
+        align-items: flex-end;
+        .d2{
+            width: auto;
+            height: 50px;
+        }
+    }
+}
+a{
+    list-style-type: none;
+    text-decoration: none;
+    color:$color1;
+    font-size: 25px;
+    margin-left: 40px;
+    font-family: $fontP;
+}
+a:hover{
+    border-bottom: solid 2px white;
+}
+
+
+#Fil{
+    width: 90%;
+    margin-left: 5%;
+    height: 150px;
+    background-color: $color1;
+    @include FlexR();
+    #F1{
+        width: 33.3%;
+        height: 50px;
+        background-color: black;
+        #Voiture1{
+            width: 100%;
+            height: 100px;
+            img{
+                margin-top: -25px;
+            }
+            p{
+                list-style-type: none;
+                text-decoration: none;
+                text-align: center;
+                font-family: $fontP;
+                font-size: 18px;                    margin-left: 50%;
+                color: black;
+                cursor: pointer;
+            }
+            .V{
+                width: 227px;
+                height: 126px
+            }
+        }  
+    }
+}
+#DivCon{
+    width: 100%;
+    height: auto;
+    @include FlexR();
+    #ListeV{
+        margin-left: 5%;
+        width:55%;
+        background-color: $color1;
+    }
+    #Reserver{
+        position: sticky;
+        top: 30px;
+        width: 30%;
+        height: 540px;
+        margin-left: 5%;
+        background-color:$color1;
+        border: black solid 3px;
+        .d8{
+            height: 86px;
+            background-image: url(../IMG/black.png);  
+        }
+        img{
+            width: 20px;
+            height: 20px;
+            margin-left: 90%;
+        }
+        p{
+            font-size: 15px;
+            font-family: $fontP;
+        }
+        #div2{
+            @include FlexR();
+            margin-left: 4%;
+            width: 100%;
+            height: 40px;
+            #N{
+                width: 45%;
+                font-family: $fontP;
+                @include Placeholder();
+            }
+            #P{
+                width: 46%;
+                margin-left: .5%;
+                font-family: $fontP;
+                @include Placeholder();
+            }
+        } 
+        .date{
+            margin-left: 4%;
+            width: 92%;
+            height: 40px;
+            height: 40px;
+        }
+        p{
+            margin-left: 4%;
+        }
+        #BTNRes{
+            @include BTN();
+        }
+    }
+
+}
+#ListeV{
+    height: auto;
+    .Voitures{
+        border-bottom: solid black 3px;
+        @include FlexR();
+        height: 300px;
+        .IMGBTN{
+            width: 100%;
+            img{
+                width: auto;
+                height: 150px;
+            }
+            .BTNChoix{
+                @include BTN();   
+            } 
+        }
+        .Pargs{
+            margin-left: 5%;
+            p{
+                font-family: $fontP;    
+            }
+            .par1{
+                font-size : 20px;
+                margin-left: -4%;
+            }
+            .par2{
+                font-size : 18px;
+            }
+            .par3{
+                font-size : 15px;
+                font-weight: lighter;
+            }
+            table{
+                tr{
+                    margin-left: 15%;
+                    td{
+                        width: 35%;
+                        height: 50px;
+                        font-family: $fontP;
+                        font-size: 15px;
+                        img{
+                            height:auto;
+                            width: 20px;
+                        }
+                    }
+                }
+            }
+        }        
+    }
+    // .Prestige{
+    //     display: none;
+    // }
+    // .Mariage{
+    //     display:none;
+    // }
+}
+
+#Footer{
+    width: 100%;
+    //background-color: rgba(0, 0, 0, 0.700);
+    height: 300px;
+    #parts4{
+        @include FlexR();
+        width: 100%;
+        height: 280px;
+        background-color: black;
+        font-size: 16px;
+        @include fontPar();
+        justify-content: space-around;
+        #Aide , #Societe , #Liens ,#Reseaux{
+            width: 20%;
+            height:300px;
+            cursor: pointer;
+            #Newsl{
+                @include FlexR();
+                height: 50px;
+                #New{
+                    width: 70%;
+                    margin-left: 10%;
+                    height: 30px;
+                    border-radius: 10px;
+                    -webkit-border-radius: 10px;
+                    -moz-border-radius: 10px;
+                    -ms-border-radius: 10px;
+                    -o-border-radius: 10px;
+}
+                #Ok{
+                    width: 20%;
+                    height: 30px;
+                    font-family: $fontP;
+                    background-color: black;
+                    color:$color1;
+                    font-size: 12px;
+                    border-radius: 10px;
+                    -webkit-border-radius: 10px;
+                    -moz-border-radius: 10px;
+                    -ms-border-radius: 10px;
+                    -o-border-radius: 10px;
+}
+            }
+            #pay{
+                @include FlexR();
+                width: 100%;
+                height: 30px;
+                div{
+                    width:20%;
+                    margin-left: 10%;
+                    img{
+                        width: 30px;
+                        height: 30px;
+                    }
+                }
+               
+            }
+        }
+    }
+}
+
+.SousT{
+    text-decoration: underline;
+    font-size: 24px;
+}
+#Coorp{
+    height:20px;
+    width: 100%;
+    background-color: $color1;
+    @include FlexR();
+    #NomSoc ,#Droits , #Cor{
+        width: 30%;
+        margin-left: 2%;
+        justify-content: space-between;
+        p{
+            text-align: center;
+            font-family: $fontP;
+            font-size: 15px;
+            color: Black;
+        }
+    }
+
+}
+#sincrire{
+    display:none;
+    width: 100%;
+    height: 500%;
+    background-color: rgba(0, 0, 0, 0.808);
+    position: absolute;
+    top: 0;
+    z-index: 88;
+    #logoInscrip{
+        width: 60%;
+        height:100px;
+        background-color: black;
+        margin-left: 20%;
+        margin-top: 7.5%;
+        img{
+            margin-left: 5%;
+            width: 40%;
+            height: 100px;
+            float: left;
+        }
+        a{
+            font-size: 20px;
+            font-family: $fontP;
+            margin-left: 43%;
+            color: $color1;
+            margin-top: 90px;
+            list-style-type: none;
+            text-decoration: none;
+            cursor: pointer;
+        }
+    }
+    #Inscrip{
+        width: 60%;
+        height: 450px;
+        margin-left: 20%;
+        @include FlexR();
+        background-color: white;
+        #pan1{
+            width: 60%;
+            background-color: rgb(255, 255, 255);
+            p{
+                margin-left: 10%;
+                font-size: 18px;
+                font-family: $fontP;
+            }
+            input{
+                margin-left: 10%;
+                width: 50%;
+                height: 20px;
+                font-size: 14px;
+                font-family: $fontP;
+            }
+            #check{
+                float: left;
+                margin-left: -12%;
+            }
+            label{
+                font-size: 18px;
+                font-family: $fontP;
+                margin-left: -20%;
+            }
+            #SeConn{
+                color: $color1;
+                width: 80%;
+                height: 40px;
+                border-radius:5px;
+                background-color: black;
+                font-family: $fontP;
+                font-size: 15px;
+                margin-left: 10%;
+                border-style: none;
+                cursor: pointer;
+            }
+        }
+        #pan2{
+            width: 40%;
+            background-color: rgb(0, 0, 0);
+            p{
+                //margin-left: 10%;
+                text-align: center;
+                font-size: 24px;
+                font-family: $fontP;
+                color: $color1;
+            }
+            #p1{
+                font-size: 18px;
+                text-align: start;
+                margin-left: 10%;
+            }
+            ul{
+                margin-left: 10%;
+                li{
+                    font-size: 18px;
+                    text-align: start;
+                    margin-left: 10%;
+                    font-family: $fontP;
+                    color: $color1;
+                    padding-top: 20px;
+
+                }
+            }
+            #Adherer{
+                color: black;
+                width: 80%;
+                height: 40px;
+                border-radius:5px;
+                background-color:$color1;
+                font-family: $fontP;
+                font-size: 15px;
+                margin-left: 10%;
+                border-style: none;
+                cursor: pointer;
+
+            }
+        }
+    }
+}
+
+
+
+#POPUP{
+    display:none;
+    width: 100%;
+    height: 500%;
+    background-color: rgba(0, 0, 0, 0.808);
+    position: fixed;
+    top: 0;
+    z-index: 99;
+    #logoInscrip{
+        width: 50%;
+        height:100px;
+        background-color: black;
+        margin-left: 25%;
+        margin-top: 7.5%;
+        margin-top: 30px;
+        img{
+            // margin-top: 30px;
+            margin-left: 5%;
+            width: 40%;
+            height: 100px;
+            float: left;
+        }
+        a{
+            top: 30px;
+            font-size: 20px;
+            font-family: $fontP;
+            margin-left: 43%;
+            color: $color1;
+            margin-top: 90px;
+            list-style-type: none;
+            text-decoration: none;
+            cursor: pointer;
+        }
+    }
+    #Valider{
+        width: 50%;
+        height: 400px;
+        margin-left: 25%;
+        @include FlexR();
+        background-color: white;
+        #pan1{
+        width: 100%;
+        background-color: rgb(255, 255, 255);
+            p{
+                margin-left: 25%;
+                font-size: 18px;
+                font-family: $fontP;
+            }
+            img{
+                margin-left: 25%;
+                width: 300px;
+                height: 100px;
+            }
+            #SeConn{
+                color: $color1;
+                width: 60%;
+                height: 40px;
+                border-radius:5px;
+                background-color: black;
+                font-family: $fontP;
+                font-size: 15px;
+                margin-left: 20%;
+                border-style: none;
+                cursor: pointer;
+            }
+        }
+    }   
+}
+
+
+
+
+
+
+
+// Responsive
+
+@media screen and (max-width:1175px) {
+    
+    #NavBar-Mobile{
+        display: none;
+    }
+    .d1{
+        display: flex;
+    }
+    #DivCon {
+        flex-direction: column;
+
+        #ListeV {
+            width: unset;
+            height: unset;
+            flex-wrap: wrap;
+            // background-color: unset;
+            display: flex;
+            justify-content: space-around;
+            // 
+            margin-left: unset;
+
+            // 
+            .Voitures {
+                position: relative;
+                margin-bottom: 10px;
+
+                .IMGBTN {
+                    width: 266px;
+
+                    img {
+                        height: 130px;
+                    }
+
+                    .BTNChoix {
+                        margin-left: unset;
+                        width: 266px;
+                    }
+                }
+
+                .Pargs {
+                    .par1 {
+                        margin-left: unset;
+                    }
+
+                    .par3 {
+                        position: absolute;
+                        bottom: 20px;
+                        left: 0;
+                    }
+
+                    table {
+                        tbody {
+                            tr {
+                                display: flex;
+                                margin-left: unset;
+
+                                td {
+                                    display: flex;
+                                    flex-direction: row;
+                                    align-items: center;
+                                    white-space: nowrap;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        #Reserver {
+            width: unset;
+            margin-top: 25px;
+            .d8 {
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+        }
+    }
+}
+
+// 
+@media screen and (max-width:850px) {
+    #NavBar-Mobile #nav-menu {
+        left: 73%;
+        margin-top: 10%;
+        width: 27%;
+    }
+    #NavBar-Mobile{
+        display: flex;
+    }
+    .d1{
+        display: none;
+    }
+    #Fil {
+        height: 100px;
+        #F1 {
+            #Voiture1 {
+                .V {
+                    width: 100%;
+                }
+                img{
+                    display: none;
+                }
+                p{
+                    font-size: 14px;
+                    margin-top : 40%;
+                    margin-left: 0;
+                }
+            }
+        }
+    }
+
+    .Voitures {
+        width: 90% !important;
+        height: 275px !important;
+        table{
+            display: none;
+
+        }
+
+        .Pargs {
+            // margin-left: 100px;
+
+            .par3 {
+                bottom: 30px !important;
+            }
+        }
+    }
+    #Footer{
+        #parts4{
+            display: none;
+        }
+    }
+}
+
+// 
+@media screen and (max-width:670px) {
+    #NavBar-Mobile #nav-menu {
+        left: 67%;
+        margin-top: 10%;
+        width: 32%;
+    }
+    #NavBar-Mobile{
+        display: flex;
+    }
+    .d1{
+        display: none;
+    }
+    .Pargs {
+         //margin-left: 1% !important;
+        .par1 , .par2 , .par3{
+            margin-top: 15%;
+        }  
+    }
+    body{
+        height: auto;
+    }
+}

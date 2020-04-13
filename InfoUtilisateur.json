@@ -1,0 +1,36 @@
+[{
+    "id": 1,
+    "Prenom": "ACHRAF",
+    "Nom": "CHAOUB",
+    "Password": "achraf",
+    "Email": "Achraf.chaoub@hotmail.fr",
+    "Birth": "1992-11-13",
+    "Telephone": "0754828760"
+  },
+  {
+    "id": 2,
+    "Prenom": "ABDERRAZAK",
+    "Nom": "ELMERNISSI",
+    "Password": "achraf",
+    "Email": "Achraf.chaoub@gmail.com",
+    "Birth": "1993-04-14",
+    "Telephone": "0524650524"
+  },
+  {
+    "id": 3,
+    "Prenom": "AMINE",
+    "Nom": "ROUIZI",
+    "Password": "Youcode2020",
+    "Email": "roui@gmail.com",
+    "Birth": "1992-05-06",
+    "Telephone": "0524650524"
+  } ,{
+    "id": 4,
+    "Prenom": "AMINA",
+    "Nom": "ROKILA",
+    "Password": "Youcode2020",
+    "Email": "amina@gmail.com",
+    "Birth": "1992-05-06",
+    "Telephone": "0524650524"
+  }
+]

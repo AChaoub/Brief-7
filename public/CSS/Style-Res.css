@@ -1,0 +1,960 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: white;
+  height: auto;
+}
+
+.blank {
+  width: auto;
+  height: 20px;
+}
+
+#NavBar-Mobile {
+  display: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  position: absolute;
+}
+
+#NavBar-Mobile #nav-header {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding-left: 10px;
+  padding-top: 5px;
+}
+
+#NavBar-Mobile #nav-header #nav-menu-icon {
+  position: absolute;
+  left: 91%;
+  top: 41%;
+  cursor: pointer;
+}
+
+#NavBar-Mobile #nav-header #nav-menu-icon #menu {
+  width: 35px;
+  height: 35px;
+}
+
+#NavBar-Mobile #nav-header #nav-menu-icon #nav-menu-logo img {
+  width: 180px;
+}
+
+#NavBar-Mobile #nav-header #nav-menu-logo img {
+  width: 180px;
+}
+
+#NavBar-Mobile #nav-menu {
+  left: 85%;
+  margin-top: 5%;
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: rgba(255, 255, 255, 0.89);
+  width: 15%;
+  border-top-left-radius: 30%;
+  border-bottom-left-radius: 30%;
+}
+
+#NavBar-Mobile #nav-menu #nav-close {
+  cursor: pointer;
+  width: 35px;
+  height: 35px;
+  margin-left: 53px;
+  position: absolute;
+  left: 86px;
+  top: -18px;
+}
+
+#NavBar-Mobile #nav-menu a {
+  height: 90px;
+  color: black;
+}
+
+.d1 {
+  width: 100%;
+  height: 90px;
+  background-color: black;
+  z-index: 2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+}
+
+.d1 #image {
+  width: 90%;
+  z-index: 3;
+  margin-left: 3%;
+  margin-top: 1%;
+}
+
+.d1 #MenuB {
+  width: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.d1 #MenuB .d2 {
+  width: auto;
+  height: 50px;
+}
+
+a {
+  list-style-type: none;
+  text-decoration: none;
+  color: #f7f7f7;
+  font-size: 25px;
+  margin-left: 40px;
+  font-family: "Oswald";
+}
+
+a:hover {
+  border-bottom: solid 2px white;
+}
+
+#Fil {
+  width: 90%;
+  margin-left: 5%;
+  height: 150px;
+  background-color: #f7f7f7;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+}
+
+#Fil #F1 {
+  width: 33.3%;
+  height: 50px;
+  background-color: black;
+}
+
+#Fil #F1 #Voiture1 {
+  width: 100%;
+  height: 100px;
+}
+
+#Fil #F1 #Voiture1 img {
+  margin-top: -25px;
+}
+
+#Fil #F1 #Voiture1 p {
+  list-style-type: none;
+  text-decoration: none;
+  text-align: center;
+  font-family: "Oswald";
+  font-size: 18px;
+  margin-left: 50%;
+  color: black;
+  cursor: pointer;
+}
+
+#Fil #F1 #Voiture1 .V {
+  width: 227px;
+  height: 126px;
+}
+
+#DivCon {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+}
+
+#DivCon #ListeV {
+  margin-left: 5%;
+  width: 55%;
+  background-color: #f7f7f7;
+}
+
+#DivCon #Reserver {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 30px;
+  width: 30%;
+  height: 540px;
+  margin-left: 5%;
+  background-color: #f7f7f7;
+  border: black solid 3px;
+}
+
+#DivCon #Reserver .d8 {
+  height: 86px;
+  background-image: url(../IMG/black.png);
+}
+
+#DivCon #Reserver img {
+  width: 20px;
+  height: 20px;
+  margin-left: 90%;
+}
+
+#DivCon #Reserver p {
+  font-size: 15px;
+  font-family: "Oswald";
+}
+
+#DivCon #Reserver #div2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  margin-left: 4%;
+  width: 100%;
+  height: 40px;
+}
+
+#DivCon #Reserver #div2 #N {
+  width: 45%;
+  font-family: "Oswald";
+}
+
+#DivCon #Reserver #div2 #N::-webkit-input-placeholder {
+  color: black;
+  font-size: 14px;
+  margin-top: -5px;
+  font-family: "Oswald";
+}
+
+#DivCon #Reserver #div2 #N:-ms-input-placeholder {
+  color: black;
+  font-size: 14px;
+  margin-top: -5px;
+  font-family: "Oswald";
+}
+
+#DivCon #Reserver #div2 #N::-ms-input-placeholder {
+  color: black;
+  font-size: 14px;
+  margin-top: -5px;
+  font-family: "Oswald";
+}
+
+#DivCon #Reserver #div2 #N::placeholder {
+  color: black;
+  font-size: 14px;
+  margin-top: -5px;
+  font-family: "Oswald";
+}
+
+#DivCon #Reserver #div2 #P {
+  width: 46%;
+  margin-left: .5%;
+  font-family: "Oswald";
+}
+
+#DivCon #Reserver #div2 #P::-webkit-input-placeholder {
+  color: black;
+  font-size: 14px;
+  margin-top: -5px;
+  font-family: "Oswald";
+}
+
+#DivCon #Reserver #div2 #P:-ms-input-placeholder {
+  color: black;
+  font-size: 14px;
+  margin-top: -5px;
+  font-family: "Oswald";
+}
+
+#DivCon #Reserver #div2 #P::-ms-input-placeholder {
+  color: black;
+  font-size: 14px;
+  margin-top: -5px;
+  font-family: "Oswald";
+}
+
+#DivCon #Reserver #div2 #P::placeholder {
+  color: black;
+  font-size: 14px;
+  margin-top: -5px;
+  font-family: "Oswald";
+}
+
+#DivCon #Reserver .date {
+  margin-left: 4%;
+  width: 92%;
+  height: 40px;
+  height: 40px;
+}
+
+#DivCon #Reserver p {
+  margin-left: 4%;
+}
+
+#DivCon #Reserver #BTNRes {
+  width: 80%;
+  margin-left: 10%;
+  height: 40px;
+  background-color: white;
+  color: black;
+  font-family: "Oswald";
+  font-size: 20px;
+  border-style: none;
+}
+
+#DivCon #Reserver #BTNRes:hover {
+  color: #f7f7f7;
+  background-color: black;
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -o-transform: scale(1.1);
+}
+
+#ListeV {
+  height: auto;
+}
+
+#ListeV .Voitures {
+  border-bottom: solid black 3px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  height: 300px;
+}
+
+#ListeV .Voitures .IMGBTN {
+  width: 100%;
+}
+
+#ListeV .Voitures .IMGBTN img {
+  width: auto;
+  height: 150px;
+}
+
+#ListeV .Voitures .IMGBTN .BTNChoix {
+  width: 80%;
+  margin-left: 10%;
+  height: 40px;
+  background-color: white;
+  color: black;
+  font-family: "Oswald";
+  font-size: 20px;
+  border-style: none;
+}
+
+#ListeV .Voitures .IMGBTN .BTNChoix:hover {
+  color: #f7f7f7;
+  background-color: black;
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -o-transform: scale(1.1);
+}
+
+#ListeV .Voitures .Pargs {
+  margin-left: 5%;
+}
+
+#ListeV .Voitures .Pargs p {
+  font-family: "Oswald";
+}
+
+#ListeV .Voitures .Pargs .par1 {
+  font-size: 20px;
+  margin-left: -4%;
+}
+
+#ListeV .Voitures .Pargs .par2 {
+  font-size: 18px;
+}
+
+#ListeV .Voitures .Pargs .par3 {
+  font-size: 15px;
+  font-weight: lighter;
+}
+
+#ListeV .Voitures .Pargs table tr {
+  margin-left: 15%;
+}
+
+#ListeV .Voitures .Pargs table tr td {
+  width: 35%;
+  height: 50px;
+  font-family: "Oswald";
+  font-size: 15px;
+}
+
+#ListeV .Voitures .Pargs table tr td img {
+  height: auto;
+  width: 20px;
+}
+
+#Footer {
+  width: 100%;
+  height: 300px;
+}
+
+#Footer #parts4 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  width: 100%;
+  height: 280px;
+  background-color: black;
+  font-size: 16px;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+#Footer #parts4 p {
+  color: #f7f7f7;
+  font-family: "Oswald";
+  margin-left: 10%;
+}
+
+#Footer #parts4 #Aide, #Footer #parts4 #Societe, #Footer #parts4 #Liens, #Footer #parts4 #Reseaux {
+  width: 20%;
+  height: 300px;
+  cursor: pointer;
+}
+
+#Footer #parts4 #Aide #Newsl, #Footer #parts4 #Societe #Newsl, #Footer #parts4 #Liens #Newsl, #Footer #parts4 #Reseaux #Newsl {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  height: 50px;
+}
+
+#Footer #parts4 #Aide #Newsl #New, #Footer #parts4 #Societe #Newsl #New, #Footer #parts4 #Liens #Newsl #New, #Footer #parts4 #Reseaux #Newsl #New {
+  width: 70%;
+  margin-left: 10%;
+  height: 30px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+#Footer #parts4 #Aide #Newsl #Ok, #Footer #parts4 #Societe #Newsl #Ok, #Footer #parts4 #Liens #Newsl #Ok, #Footer #parts4 #Reseaux #Newsl #Ok {
+  width: 20%;
+  height: 30px;
+  font-family: "Oswald";
+  background-color: black;
+  color: #f7f7f7;
+  font-size: 12px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+#Footer #parts4 #Aide #pay, #Footer #parts4 #Societe #pay, #Footer #parts4 #Liens #pay, #Footer #parts4 #Reseaux #pay {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  width: 100%;
+  height: 30px;
+}
+
+#Footer #parts4 #Aide #pay div, #Footer #parts4 #Societe #pay div, #Footer #parts4 #Liens #pay div, #Footer #parts4 #Reseaux #pay div {
+  width: 20%;
+  margin-left: 10%;
+}
+
+#Footer #parts4 #Aide #pay div img, #Footer #parts4 #Societe #pay div img, #Footer #parts4 #Liens #pay div img, #Footer #parts4 #Reseaux #pay div img {
+  width: 30px;
+  height: 30px;
+}
+
+.SousT {
+  text-decoration: underline;
+  font-size: 24px;
+}
+
+#Coorp {
+  height: 20px;
+  width: 100%;
+  background-color: #f7f7f7;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+}
+
+#Coorp #NomSoc, #Coorp #Droits, #Coorp #Cor {
+  width: 30%;
+  margin-left: 2%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#Coorp #NomSoc p, #Coorp #Droits p, #Coorp #Cor p {
+  text-align: center;
+  font-family: "Oswald";
+  font-size: 15px;
+  color: Black;
+}
+
+#sincrire {
+  display: none;
+  width: 100%;
+  height: 500%;
+  background-color: rgba(0, 0, 0, 0.808);
+  position: absolute;
+  top: 0;
+  z-index: 88;
+}
+
+#sincrire #logoInscrip {
+  width: 60%;
+  height: 100px;
+  background-color: black;
+  margin-left: 20%;
+  margin-top: 7.5%;
+}
+
+#sincrire #logoInscrip img {
+  margin-left: 5%;
+  width: 40%;
+  height: 100px;
+  float: left;
+}
+
+#sincrire #logoInscrip a {
+  font-size: 20px;
+  font-family: "Oswald";
+  margin-left: 43%;
+  color: #f7f7f7;
+  margin-top: 90px;
+  list-style-type: none;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#sincrire #Inscrip {
+  width: 60%;
+  height: 450px;
+  margin-left: 20%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  background-color: white;
+}
+
+#sincrire #Inscrip #pan1 {
+  width: 60%;
+  background-color: white;
+}
+
+#sincrire #Inscrip #pan1 p {
+  margin-left: 10%;
+  font-size: 18px;
+  font-family: "Oswald";
+}
+
+#sincrire #Inscrip #pan1 input {
+  margin-left: 10%;
+  width: 50%;
+  height: 20px;
+  font-size: 14px;
+  font-family: "Oswald";
+}
+
+#sincrire #Inscrip #pan1 #check {
+  float: left;
+  margin-left: -12%;
+}
+
+#sincrire #Inscrip #pan1 label {
+  font-size: 18px;
+  font-family: "Oswald";
+  margin-left: -20%;
+}
+
+#sincrire #Inscrip #pan1 #SeConn {
+  color: #f7f7f7;
+  width: 80%;
+  height: 40px;
+  border-radius: 5px;
+  background-color: black;
+  font-family: "Oswald";
+  font-size: 15px;
+  margin-left: 10%;
+  border-style: none;
+  cursor: pointer;
+}
+
+#sincrire #Inscrip #pan2 {
+  width: 40%;
+  background-color: black;
+}
+
+#sincrire #Inscrip #pan2 p {
+  text-align: center;
+  font-size: 24px;
+  font-family: "Oswald";
+  color: #f7f7f7;
+}
+
+#sincrire #Inscrip #pan2 #p1 {
+  font-size: 18px;
+  text-align: start;
+  margin-left: 10%;
+}
+
+#sincrire #Inscrip #pan2 ul {
+  margin-left: 10%;
+}
+
+#sincrire #Inscrip #pan2 ul li {
+  font-size: 18px;
+  text-align: start;
+  margin-left: 10%;
+  font-family: "Oswald";
+  color: #f7f7f7;
+  padding-top: 20px;
+}
+
+#sincrire #Inscrip #pan2 #Adherer {
+  color: black;
+  width: 80%;
+  height: 40px;
+  border-radius: 5px;
+  background-color: #f7f7f7;
+  font-family: "Oswald";
+  font-size: 15px;
+  margin-left: 10%;
+  border-style: none;
+  cursor: pointer;
+}
+
+#POPUP {
+  display: none;
+  width: 100%;
+  height: 500%;
+  background-color: rgba(0, 0, 0, 0.808);
+  position: fixed;
+  top: 0;
+  z-index: 99;
+}
+
+#POPUP #logoInscrip {
+  width: 50%;
+  height: 100px;
+  background-color: black;
+  margin-left: 25%;
+  margin-top: 7.5%;
+  margin-top: 30px;
+}
+
+#POPUP #logoInscrip img {
+  margin-left: 5%;
+  width: 40%;
+  height: 100px;
+  float: left;
+}
+
+#POPUP #logoInscrip a {
+  top: 30px;
+  font-size: 20px;
+  font-family: "Oswald";
+  margin-left: 43%;
+  color: #f7f7f7;
+  margin-top: 90px;
+  list-style-type: none;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#POPUP #Valider {
+  width: 50%;
+  height: 400px;
+  margin-left: 25%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  background-color: white;
+}
+
+#POPUP #Valider #pan1 {
+  width: 100%;
+  background-color: white;
+}
+
+#POPUP #Valider #pan1 p {
+  margin-left: 25%;
+  font-size: 18px;
+  font-family: "Oswald";
+}
+
+#POPUP #Valider #pan1 img {
+  margin-left: 25%;
+  width: 300px;
+  height: 100px;
+}
+
+#POPUP #Valider #pan1 #SeConn {
+  color: #f7f7f7;
+  width: 60%;
+  height: 40px;
+  border-radius: 5px;
+  background-color: black;
+  font-family: "Oswald";
+  font-size: 15px;
+  margin-left: 20%;
+  border-style: none;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1175px) {
+  #NavBar-Mobile {
+    display: none;
+  }
+  .d1 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  #DivCon {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #DivCon #ListeV {
+    width: unset;
+    height: unset;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    margin-left: unset;
+  }
+  #DivCon #ListeV .Voitures {
+    position: relative;
+    margin-bottom: 10px;
+  }
+  #DivCon #ListeV .Voitures .IMGBTN {
+    width: 266px;
+  }
+  #DivCon #ListeV .Voitures .IMGBTN img {
+    height: 130px;
+  }
+  #DivCon #ListeV .Voitures .IMGBTN .BTNChoix {
+    margin-left: unset;
+    width: 266px;
+  }
+  #DivCon #ListeV .Voitures .Pargs .par1 {
+    margin-left: unset;
+  }
+  #DivCon #ListeV .Voitures .Pargs .par3 {
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+  }
+  #DivCon #ListeV .Voitures .Pargs table tbody tr {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-left: unset;
+  }
+  #DivCon #ListeV .Voitures .Pargs table tbody tr td {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    white-space: nowrap;
+  }
+  #DivCon #Reserver {
+    width: unset;
+    margin-top: 25px;
+  }
+  #DivCon #Reserver .d8 {
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  #NavBar-Mobile #nav-menu {
+    left: 73%;
+    margin-top: 10%;
+    width: 27%;
+  }
+  #NavBar-Mobile {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .d1 {
+    display: none;
+  }
+  #Fil {
+    height: 100px;
+  }
+  #Fil #F1 #Voiture1 .V {
+    width: 100%;
+  }
+  #Fil #F1 #Voiture1 img {
+    display: none;
+  }
+  #Fil #F1 #Voiture1 p {
+    font-size: 14px;
+    margin-top: 40%;
+    margin-left: 0;
+  }
+  .Voitures {
+    width: 90% !important;
+    height: 275px !important;
+  }
+  .Voitures table {
+    display: none;
+  }
+  .Voitures .Pargs .par3 {
+    bottom: 30px !important;
+  }
+  #Footer #parts4 {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 670px) {
+  #NavBar-Mobile #nav-menu {
+    left: 67%;
+    margin-top: 10%;
+    width: 32%;
+  }
+  #NavBar-Mobile {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .d1 {
+    display: none;
+  }
+  .Pargs .par1, .Pargs .par2, .Pargs .par3 {
+    margin-top: 15%;
+  }
+  body {
+    height: auto;
+  }
+}
+/*# sourceMappingURL=Style-Res.css.map */
